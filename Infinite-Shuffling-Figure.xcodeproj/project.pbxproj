@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E48DB281F0E2B350066188A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB271F0E2B350066188A /* main.m */; };
+		2E48DB2B1F0E2B350066188A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB2A1F0E2B350066188A /* AppDelegate.m */; };
+		2E48DB331F0E2B350066188A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E48DB321F0E2B350066188A /* Assets.xcassets */; };
+		2E48DB361F0E2B350066188A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48DB341F0E2B350066188A /* LaunchScreen.storyboard */; };
+		2E48DB411F0E2B350066188A /* Infinite_Shuffling_FigureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB401F0E2B350066188A /* Infinite_Shuffling_FigureTests.m */; };
+		2E48DB4C1F0E2B360066188A /* Infinite_Shuffling_FigureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB4B1F0E2B360066188A /* Infinite_Shuffling_FigureUITests.m */; };
+		2E514C9A1F0E2D58004C99E3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E514C951F0E2D58004C99E3 /* MainViewController.m */; };
+		2E514C9B1F0E2D58004C99E3 /* BannarsScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E514C991F0E2D58004C99E3 /* BannarsScroller.m */; };
+		2E514C9F1F0E2DB4004C99E3 /* BannarsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E514C9E1F0E2DB4004C99E3 /* BannarsModel.m */; };
+		2E514CA51F0E344E004C99E3 /* BannarsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E514CA41F0E344E004C99E3 /* BannarsDetailViewController.m */; };
+		6EC30AF6760DA5959761E560 /* libPods-Infinite-Shuffling-Figure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E476B12D8EA6AD17F21D0C8 /* libPods-Infinite-Shuffling-Figure.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E48DB3D1F0E2B350066188A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E48DB1B1F0E2B350066188A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E48DB221F0E2B350066188A;
+			remoteInfo = "Infinite-Shuffling-Figure";
+		};
+		2E48DB481F0E2B360066188A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E48DB1B1F0E2B350066188A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E48DB221F0E2B350066188A;
+			remoteInfo = "Infinite-Shuffling-Figure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E48DB231F0E2B350066188A /* Infinite-Shuffling-Figure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Shuffling-Figure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48DB271F0E2B350066188A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E48DB291F0E2B350066188A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		2E48DB2A1F0E2B350066188A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		2E48DB321F0E2B350066188A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		2E48DB351F0E2B350066188A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E48DB371F0E2B350066188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		2E48DB3C1F0E2B350066188A /* Infinite-Shuffling-FigureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-Shuffling-FigureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48DB401F0E2B350066188A /* Infinite_Shuffling_FigureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Infinite_Shuffling_FigureTests.m; sourceTree = "<group>"; };
+		2E48DB421F0E2B350066188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E48DB471F0E2B360066188A /* Infinite-Shuffling-FigureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-Shuffling-FigureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48DB4B1F0E2B360066188A /* Infinite_Shuffling_FigureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Infinite_Shuffling_FigureUITests.m; sourceTree = "<group>"; };
+		2E48DB4D1F0E2B360066188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E514C941F0E2D58004C99E3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2E514C951F0E2D58004C99E3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2E514C981F0E2D58004C99E3 /* BannarsScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannarsScroller.h; sourceTree = "<group>"; };
+		2E514C991F0E2D58004C99E3 /* BannarsScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannarsScroller.m; sourceTree = "<group>"; };
+		2E514C9D1F0E2DB4004C99E3 /* BannarsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannarsModel.h; sourceTree = "<group>"; };
+		2E514C9E1F0E2DB4004C99E3 /* BannarsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannarsModel.m; sourceTree = "<group>"; };
+		2E514CA31F0E344E004C99E3 /* BannarsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannarsDetailViewController.h; sourceTree = "<group>"; };
+		2E514CA41F0E344E004C99E3 /* BannarsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannarsDetailViewController.m; sourceTree = "<group>"; };
+		2F8042439F375571865B5888 /* Pods-Infinite-Shuffling-Figure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Shuffling-Figure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Shuffling-Figure/Pods-Infinite-Shuffling-Figure.debug.xcconfig"; sourceTree = "<group>"; };
+		5E476B12D8EA6AD17F21D0C8 /* libPods-Infinite-Shuffling-Figure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Infinite-Shuffling-Figure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9520179CC6E2897AD5EF9AE5 /* Pods-Infinite-Shuffling-Figure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Shuffling-Figure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Shuffling-Figure/Pods-Infinite-Shuffling-Figure.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E48DB201F0E2B350066188A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC30AF6760DA5959761E560 /* libPods-Infinite-Shuffling-Figure.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB391F0E2B350066188A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB441F0E2B360066188A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		124562C4C1BF2D6CF928372F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F8042439F375571865B5888 /* Pods-Infinite-Shuffling-Figure.debug.xcconfig */,
+				9520179CC6E2897AD5EF9AE5 /* Pods-Infinite-Shuffling-Figure.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E48DB1A1F0E2B350066188A = {
+			isa = PBXGroup;
+			children = (
+				2E48DB251F0E2B350066188A /* Infinite-Shuffling-Figure */,
+				2E48DB3F1F0E2B350066188A /* Infinite-Shuffling-FigureTests */,
+				2E48DB4A1F0E2B360066188A /* Infinite-Shuffling-FigureUITests */,
+				2E48DB241F0E2B350066188A /* Products */,
+				124562C4C1BF2D6CF928372F /* Pods */,
+				89062BF656AB167D65791A4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E48DB241F0E2B350066188A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E48DB231F0E2B350066188A /* Infinite-Shuffling-Figure.app */,
+				2E48DB3C1F0E2B350066188A /* Infinite-Shuffling-FigureTests.xctest */,
+				2E48DB471F0E2B360066188A /* Infinite-Shuffling-FigureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E48DB251F0E2B350066188A /* Infinite-Shuffling-Figure */ = {
+			isa = PBXGroup;
+			children = (
+				2E514C9C1F0E2D62004C99E3 /* Other */,
+				2E514C931F0E2D58004C99E3 /* Controller */,
+				2E514C961F0E2D58004C99E3 /* Model */,
+				2E514C971F0E2D58004C99E3 /* View */,
+				2E48DB261F0E2B350066188A /* Supporting Files */,
+			);
+			path = "Infinite-Shuffling-Figure";
+			sourceTree = "<group>";
+		};
+		2E48DB261F0E2B350066188A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E48DB271F0E2B350066188A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E48DB3F1F0E2B350066188A /* Infinite-Shuffling-FigureTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E48DB401F0E2B350066188A /* Infinite_Shuffling_FigureTests.m */,
+				2E48DB421F0E2B350066188A /* Info.plist */,
+			);
+			path = "Infinite-Shuffling-FigureTests";
+			sourceTree = "<group>";
+		};
+		2E48DB4A1F0E2B360066188A /* Infinite-Shuffling-FigureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E48DB4B1F0E2B360066188A /* Infinite_Shuffling_FigureUITests.m */,
+				2E48DB4D1F0E2B360066188A /* Info.plist */,
+			);
+			path = "Infinite-Shuffling-FigureUITests";
+			sourceTree = "<group>";
+		};
+		2E514C931F0E2D58004C99E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E514C941F0E2D58004C99E3 /* MainViewController.h */,
+				2E514C951F0E2D58004C99E3 /* MainViewController.m */,
+				2E514CA31F0E344E004C99E3 /* BannarsDetailViewController.h */,
+				2E514CA41F0E344E004C99E3 /* BannarsDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E514C961F0E2D58004C99E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E514C9D1F0E2DB4004C99E3 /* BannarsModel.h */,
+				2E514C9E1F0E2DB4004C99E3 /* BannarsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E514C971F0E2D58004C99E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E514C981F0E2D58004C99E3 /* BannarsScroller.h */,
+				2E514C991F0E2D58004C99E3 /* BannarsScroller.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E514C9C1F0E2D62004C99E3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2E48DB291F0E2B350066188A /* AppDelegate.h */,
+				2E48DB2A1F0E2B350066188A /* AppDelegate.m */,
+				2E48DB321F0E2B350066188A /* Assets.xcassets */,
+				2E48DB341F0E2B350066188A /* LaunchScreen.storyboard */,
+				2E48DB371F0E2B350066188A /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		89062BF656AB167D65791A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E476B12D8EA6AD17F21D0C8 /* libPods-Infinite-Shuffling-Figure.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E48DB221F0E2B350066188A /* Infinite-Shuffling-Figure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48DB501F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-Figure" */;
+			buildPhases = (
+				D663FA516FD411CF3BD5CEC7 /* [CP] Check Pods Manifest.lock */,
+				2E48DB1F1F0E2B350066188A /* Sources */,
+				2E48DB201F0E2B350066188A /* Frameworks */,
+				2E48DB211F0E2B350066188A /* Resources */,
+				0929717A3A60B5B33C672733 /* [CP] Embed Pods Frameworks */,
+				61445991A8FCE991C140DE49 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infinite-Shuffling-Figure";
+			productName = "Infinite-Shuffling-Figure";
+			productReference = 2E48DB231F0E2B350066188A /* Infinite-Shuffling-Figure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E48DB3B1F0E2B350066188A /* Infinite-Shuffling-FigureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48DB531F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-FigureTests" */;
+			buildPhases = (
+				2E48DB381F0E2B350066188A /* Sources */,
+				2E48DB391F0E2B350066188A /* Frameworks */,
+				2E48DB3A1F0E2B350066188A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E48DB3E1F0E2B350066188A /* PBXTargetDependency */,
+			);
+			name = "Infinite-Shuffling-FigureTests";
+			productName = "Infinite-Shuffling-FigureTests";
+			productReference = 2E48DB3C1F0E2B350066188A /* Infinite-Shuffling-FigureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E48DB461F0E2B360066188A /* Infinite-Shuffling-FigureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48DB561F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-FigureUITests" */;
+			buildPhases = (
+				2E48DB431F0E2B360066188A /* Sources */,
+				2E48DB441F0E2B360066188A /* Frameworks */,
+				2E48DB451F0E2B360066188A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E48DB491F0E2B360066188A /* PBXTargetDependency */,
+			);
+			name = "Infinite-Shuffling-FigureUITests";
+			productName = "Infinite-Shuffling-FigureUITests";
+			productReference = 2E48DB471F0E2B360066188A /* Infinite-Shuffling-FigureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E48DB1B1F0E2B350066188A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = View;
+				TargetAttributes = {
+					2E48DB221F0E2B350066188A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					2E48DB3B1F0E2B350066188A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E48DB221F0E2B350066188A;
+					};
+					2E48DB461F0E2B360066188A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E48DB221F0E2B350066188A;
+					};
+				};
+			};
+			buildConfigurationList = 2E48DB1E1F0E2B350066188A /* Build configuration list for PBXProject "Infinite-Shuffling-Figure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E48DB1A1F0E2B350066188A;
+			productRefGroup = 2E48DB241F0E2B350066188A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E48DB221F0E2B350066188A /* Infinite-Shuffling-Figure */,
+				2E48DB3B1F0E2B350066188A /* Infinite-Shuffling-FigureTests */,
+				2E48DB461F0E2B360066188A /* Infinite-Shuffling-FigureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E48DB211F0E2B350066188A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48DB361F0E2B350066188A /* LaunchScreen.storyboard in Resources */,
+				2E48DB331F0E2B350066188A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB3A1F0E2B350066188A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB451F0E2B360066188A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0929717A3A60B5B33C672733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Shuffling-Figure/Pods-Infinite-Shuffling-Figure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61445991A8FCE991C140DE49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Shuffling-Figure/Pods-Infinite-Shuffling-Figure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D663FA516FD411CF3BD5CEC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E48DB1F1F0E2B350066188A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48DB2B1F0E2B350066188A /* AppDelegate.m in Sources */,
+				2E514C9F1F0E2DB4004C99E3 /* BannarsModel.m in Sources */,
+				2E514C9A1F0E2D58004C99E3 /* MainViewController.m in Sources */,
+				2E514CA51F0E344E004C99E3 /* BannarsDetailViewController.m in Sources */,
+				2E48DB281F0E2B350066188A /* main.m in Sources */,
+				2E514C9B1F0E2D58004C99E3 /* BannarsScroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB381F0E2B350066188A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48DB411F0E2B350066188A /* Infinite_Shuffling_FigureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48DB431F0E2B360066188A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48DB4C1F0E2B360066188A /* Infinite_Shuffling_FigureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E48DB3E1F0E2B350066188A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E48DB221F0E2B350066188A /* Infinite-Shuffling-Figure */;
+			targetProxy = 2E48DB3D1F0E2B350066188A /* PBXContainerItemProxy */;
+		};
+		2E48DB491F0E2B360066188A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E48DB221F0E2B350066188A /* Infinite-Shuffling-Figure */;
+			targetProxy = 2E48DB481F0E2B360066188A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E48DB341F0E2B350066188A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E48DB351F0E2B350066188A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E48DB4E1F0E2B360066188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E48DB4F1F0E2B360066188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E48DB511F0E2B360066188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8042439F375571865B5888 /* Pods-Infinite-Shuffling-Figure.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Infinite-Shuffling-Figure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-Figure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E48DB521F0E2B360066188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9520179CC6E2897AD5EF9AE5 /* Pods-Infinite-Shuffling-Figure.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Infinite-Shuffling-Figure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-Figure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E48DB541F0E2B360066188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Infinite-Shuffling-FigureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-FigureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Shuffling-Figure.app/Infinite-Shuffling-Figure";
+			};
+			name = Debug;
+		};
+		2E48DB551F0E2B360066188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Infinite-Shuffling-FigureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-FigureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Shuffling-Figure.app/Infinite-Shuffling-Figure";
+			};
+			name = Release;
+		};
+		2E48DB571F0E2B360066188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Infinite-Shuffling-FigureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-FigureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Infinite-Shuffling-Figure";
+			};
+			name = Debug;
+		};
+		2E48DB581F0E2B360066188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Infinite-Shuffling-FigureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Infinite-Shuffling-FigureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Infinite-Shuffling-Figure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E48DB1E1F0E2B350066188A /* Build configuration list for PBXProject "Infinite-Shuffling-Figure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48DB4E1F0E2B360066188A /* Debug */,
+				2E48DB4F1F0E2B360066188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48DB501F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-Figure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48DB511F0E2B360066188A /* Debug */,
+				2E48DB521F0E2B360066188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48DB531F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-FigureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48DB541F0E2B360066188A /* Debug */,
+				2E48DB551F0E2B360066188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48DB561F0E2B360066188A /* Build configuration list for PBXNativeTarget "Infinite-Shuffling-FigureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48DB571F0E2B360066188A /* Debug */,
+				2E48DB581F0E2B360066188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E48DB1B1F0E2B350066188A /* Project object */;
+}
