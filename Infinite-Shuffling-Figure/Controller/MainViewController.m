@@ -15,6 +15,7 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define WS(weakSelf)        __weak __typeof(&*self)weakSelf = self;
+#define FILEPATH @"/Users/dangbei/Desktop/Test/Infinite-Shuffling-Figure/Infinite-Shuffling-Figure/Other/json.json"
 
 @interface MainViewController ()
 
@@ -25,6 +26,7 @@
 @end
 
 @implementation MainViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,7 +47,15 @@
 
 #pragma mark -- 数据
 -(void)createData{
-
+    
+    NSData *data = [[NSData alloc]initWithContentsOfFile:FILEPATH];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    NSArray *array = dict[@"items"];
+    
+    for (NSDictionary *dic in array) {
+        BannarsModel *model = [[BannarsModel alloc]initWithDict:dic];
+        [self.dataArray addObject:model];
+    }
 }
 
 #pragma mark -- UI
@@ -54,17 +64,17 @@
     WS(weakSelf);
     if (_dataArray.count > 1) {
         
-        _bannarsScroller = [[BannarsScroller alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 200) withImages:_dataArray withIsRunloop:YES withBlock:^(BannarsModel *model) {
+        _bannarsScroller = [[BannarsScroller alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 200) withImages:_dataArray withIsRunloop:YES withBlock:^(BannarsModel *model) {
             BannarsDetailViewController *vc = [[BannarsDetailViewController alloc]init];
+            vc.model = model;
             [weakSelf presentViewController:vc animated:YES completion:^{
-                vc.model = model;
             }];
         }];
         [self.view addSubview:_bannarsScroller];
         
     }else if(_dataArray.count == 1){
         
-        UIImageView *bannarsImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 200)];
+        UIImageView *bannarsImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 200)];
         [self.view addSubview:bannarsImage];
         BannarsModel *model = _dataArray[0];
         [bannarsImage sd_setImageWithURL:[NSURL URLWithString:model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
@@ -80,8 +90,8 @@
     if (_dataArray.count == 1) {
         BannarsModel *model = _dataArray[0];
         BannarsDetailViewController *vc = [[BannarsDetailViewController alloc]init];
+        vc.model = model;
         [self presentViewController:vc animated:YES completion:^{
-            vc.model = model;
         }];
     }
 }

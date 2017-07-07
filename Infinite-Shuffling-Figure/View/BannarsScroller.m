@@ -49,17 +49,18 @@ typedef enum : NSUInteger {
     
     if (self) {
         
+        self.frame = frame;
         self.dur = 2;
         self.imageCount = images ? images.count : 0;
         self.isRunloop = isRunloop;
         self.dataArry = images;
         self.click = block;
         [self loadBaseView];
-        
     }
     return self;
     
 }
+
 - (void)loadBaseView{
     
     self.currentImageIndex = 0;

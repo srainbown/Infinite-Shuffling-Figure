@@ -7,8 +7,14 @@
 //
 
 #import "BannarsDetailViewController.h"
+#import <WebKit/WebKit.h>
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface BannarsDetailViewController ()
+
+@property (nonatomic, strong) WKWebView *webView;
 
 @end
 
@@ -16,22 +22,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT - 20)];
+    if (_model == nil) {
+        return;
+    }else{
+        if (_model.link == nil) {
+            return;
+        }else{
+            [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_model.link]]];
+        }
+    }
+    [self.view addSubview:_webView];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

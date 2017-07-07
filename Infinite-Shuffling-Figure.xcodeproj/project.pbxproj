@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E43EF711F0F587200A29C06 /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E43EF701F0F587200A29C06 /* json.json */; };
 		2E48DB281F0E2B350066188A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB271F0E2B350066188A /* main.m */; };
 		2E48DB2B1F0E2B350066188A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E48DB2A1F0E2B350066188A /* AppDelegate.m */; };
 		2E48DB331F0E2B350066188A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E48DB321F0E2B350066188A /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E43EF701F0F587200A29C06 /* json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		2E48DB231F0E2B350066188A /* Infinite-Shuffling-Figure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Shuffling-Figure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48DB271F0E2B350066188A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E48DB291F0E2B350066188A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				2E48DB291F0E2B350066188A /* AppDelegate.h */,
 				2E48DB2A1F0E2B350066188A /* AppDelegate.m */,
+				2E43EF701F0F587200A29C06 /* json.json */,
 				2E48DB321F0E2B350066188A /* Assets.xcassets */,
 				2E48DB341F0E2B350066188A /* LaunchScreen.storyboard */,
 				2E48DB371F0E2B350066188A /* Info.plist */,
@@ -317,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E43EF711F0F587200A29C06 /* json.json in Resources */,
 				2E48DB361F0E2B350066188A /* LaunchScreen.storyboard in Resources */,
 				2E48DB331F0E2B350066188A /* Assets.xcassets in Resources */,
 			);
