@@ -48,8 +48,7 @@ typedef enum : NSUInteger {
     self = [super initWithFrame:frame];
     
     if (self) {
-        
-        self.frame = frame;
+
         self.dur = 2;
         self.imageCount = images ? images.count : 0;
         self.isRunloop = isRunloop;
@@ -74,16 +73,16 @@ typedef enum : NSUInteger {
         if (i == 0 && self.dataArry!=nil && self.dataArry.count > 1) {
             
             _model = self.dataArry[self.dataArry.count - 1];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];//左边
+            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];//左边
             
         }
         if (i == 1 && self.dataArry!=nil && self.dataArry.count > 0) {
             _model = self.dataArry[0];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];//中间
+            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];//中间
         }
         if (i == 2 && self.dataArry !=nil && self.dataArry.count > 1) {
             _model = self.dataArry[1];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];//右边
+            [imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];//右边
             
         }
         
@@ -220,16 +219,16 @@ typedef enum : NSUInteger {
     UIImageView *rightImageView = [self.imageViews objectAtIndex:2];
     
     _model = self.dataArry[_currentImageIndex];
-    [centerImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
+    [centerImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];
     
     //  重新设置左右图片
     leftImageIndex  = (_currentImageIndex + self.dataArry.count - 1) % self.dataArry.count ;
     rightImageIndex = (_currentImageIndex + 1) % self.dataArry.count ;
     _model = self.dataArry[leftImageIndex];
-    [leftImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
+    [leftImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];
     
     _model = self.dataArry[rightImageIndex];
-    [rightImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
+    [rightImageView sd_setImageWithURL:[NSURL URLWithString:_model.pic] placeholderImage:[UIImage imageNamed:@"1"] options:SDWebImageAllowInvalidSSLCertificates];
     
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.frame.size.width, 0) animated:NO];
     

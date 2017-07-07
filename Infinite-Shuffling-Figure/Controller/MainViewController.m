@@ -31,10 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"233~~";
     
     [self createData];
-    [self createUI];
-    
 }
 
 #pragma mark -- 懒加载
@@ -56,6 +55,8 @@
         BannarsModel *model = [[BannarsModel alloc]initWithDict:dic];
         [self.dataArray addObject:model];
     }
+    [self createUI];
+    
 }
 
 #pragma mark -- UI
@@ -64,17 +65,18 @@
     WS(weakSelf);
     if (_dataArray.count > 1) {
         
-        _bannarsScroller = [[BannarsScroller alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 200) withImages:_dataArray withIsRunloop:YES withBlock:^(BannarsModel *model) {
+        _bannarsScroller = [[BannarsScroller alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 200) withImages:_dataArray withIsRunloop:YES withBlock:^(BannarsModel *model) {
             BannarsDetailViewController *vc = [[BannarsDetailViewController alloc]init];
             vc.model = model;
-            [weakSelf presentViewController:vc animated:YES completion:^{
-            }];
+            [weakSelf.navigationController pushViewController:vc animated:YES];
+            
         }];
         [self.view addSubview:_bannarsScroller];
+        _bannarsScroller.frame = CGRectMake(0, 64, SCREEN_WIDTH, 200);
         
     }else if(_dataArray.count == 1){
         
-        UIImageView *bannarsImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 200)];
+        UIImageView *bannarsImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 200)];
         [self.view addSubview:bannarsImage];
         BannarsModel *model = _dataArray[0];
         [bannarsImage sd_setImageWithURL:[NSURL URLWithString:model.pic] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
@@ -91,8 +93,7 @@
         BannarsModel *model = _dataArray[0];
         BannarsDetailViewController *vc = [[BannarsDetailViewController alloc]init];
         vc.model = model;
-        [self presentViewController:vc animated:YES completion:^{
-        }];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

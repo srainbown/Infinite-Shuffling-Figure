@@ -24,7 +24,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+
     _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT - 20)];
+    _webView.allowsBackForwardNavigationGestures = YES;
     if (_model == nil) {
         return;
     }else{
@@ -37,8 +40,6 @@
     [self.view addSubview:_webView];
     
 }
-
-
 
 
 @end
