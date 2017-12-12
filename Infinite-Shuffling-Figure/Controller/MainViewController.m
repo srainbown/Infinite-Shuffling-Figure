@@ -15,7 +15,7 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define WS(weakSelf)        __weak __typeof(&*self)weakSelf = self;
-#define FILEPATH @"/Users/dangbei/Desktop/Test/Infinite-Shuffling-Figure/Infinite-Shuffling-Figure/Other/json.json"
+//#define FILEPATH @"Infinite-Shuffling-Figure/Other/json.json"
 
 @interface MainViewController ()
 
@@ -47,7 +47,12 @@
 #pragma mark -- 数据
 -(void)createData{
     
-    NSData *data = [[NSData alloc]initWithContentsOfFile:FILEPATH];
+    NSString *mainBundleDirectory=[[NSBundle mainBundle] bundlePath];
+    NSString *path=[mainBundleDirectory stringByAppendingPathComponent:@"json.json"];
+    NSURL *url=[NSURL fileURLWithPath:path];
+    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    
+//    NSData *data = [[NSData alloc]initWithContentsOfFile:FILEPATH];
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     NSArray *array = dict[@"items"];
     
